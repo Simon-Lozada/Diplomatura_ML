@@ -1,0 +1,11 @@
+Se propone complementar la función de los selectores de RRHH mediante un esquema de votación de reglas de asociación usadas en modo supervisado.
+Se pide:
+
+1. Dividir el conjunto de empleados en dos partes al azar (train y test)
+2. Entrenar un conjunto de reglas que permitan predecir los telemarketers con una cantidad de ventas por hora superior a 0.6
+3. Entrenar un conjunto de reglas que permitan predecir los telemarketers con una cantidad de ventas por hora inferior a 0.6
+4. Aplicar ambas reglas al conjunto de test y calcular para cada telemarketer cuantas reglas cumple de cada tipo.
+5. Realizar la diferencia: cantidad de reglas de telemarketer bueno que cumple - cantidad de reglas de telemarketer malo que cumple.
+6. Anotar como telemarketer aceptable a los que cumplen más de 2 reglas de bueno que de malo. (Que la diferencia calculada en el punto anterior de >5)
+7. Contar sobre el conjunto de test cuantos telemarketers buenos (que realmente vendan más de 0.6) hubiéramos contratado, cuantos malos hubiéramos no contratado, cuantos buenos nos hubiéramos perdido y cuantos malos hubiéramos contratado (matriz de confusión)
+8. Extender la solución a los candidatos
